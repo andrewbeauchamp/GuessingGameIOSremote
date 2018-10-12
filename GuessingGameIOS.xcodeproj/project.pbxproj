@@ -12,6 +12,8 @@
 		FB2D5888216CF8170044ABDA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB2D5886216CF8170044ABDA /* Main.storyboard */; };
 		FB2D588A216CF8170044ABDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB2D5889216CF8170044ABDA /* Assets.xcassets */; };
 		FB2D588D216CF8170044ABDA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB2D588B216CF8170044ABDA /* LaunchScreen.storyboard */; };
+		FBD35E00216E87CE00C241A5 /* SelectDifficultyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD35DFF216E87CE00C241A5 /* SelectDifficultyViewController.swift */; };
+		FBE45BE5216FC71F005CC4A9 /* CostomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE45BE4216FC71F005CC4A9 /* CostomViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		FB2D5889216CF8170044ABDA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB2D588C216CF8170044ABDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FB2D588E216CF8170044ABDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBD35DFF216E87CE00C241A5 /* SelectDifficultyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectDifficultyViewController.swift; sourceTree = "<group>"; };
+		FBE45BE4216FC71F005CC4A9 /* CostomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CostomViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				FB2D5889216CF8170044ABDA /* Assets.xcassets */,
 				FB2D588B216CF8170044ABDA /* LaunchScreen.storyboard */,
 				FB2D588E216CF8170044ABDA /* Info.plist */,
+				FBD35DFF216E87CE00C241A5 /* SelectDifficultyViewController.swift */,
+				FBE45BE4216FC71F005CC4A9 /* CostomViewController.swift */,
 			);
 			path = GuessingGameIOS;
 			sourceTree = "<group>";
@@ -136,6 +142,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB2D5885216CF8170044ABDA /* ViewController.swift in Sources */,
+				FBE45BE5216FC71F005CC4A9 /* CostomViewController.swift in Sources */,
+				FBD35E00216E87CE00C241A5 /* SelectDifficultyViewController.swift in Sources */,
 				FB2D5883216CF8170044ABDA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
