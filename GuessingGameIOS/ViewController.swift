@@ -30,8 +30,7 @@ class ViewController: UIViewController {
     
     //Mark Properties
     var randomNumber = Int.random(in: 1...100)
-    var guessesRemaining = 5
-    var numberOfGuesses = 5
+    var guessesRemaining = 0
     var minimumNumber = 1
     var maximumNumber = 100
     
@@ -44,7 +43,7 @@ class ViewController: UIViewController {
             numberGuessedLabel.text = "Please put in a number"
             return
         }
-    
+        
         makeAGuess(guess)
         
     }
@@ -53,7 +52,7 @@ class ViewController: UIViewController {
     
     func makeAGuess ( _ guess: Int) {
         guard guess >= minimumNumber && guess <= maximumNumber else {
-            numberGuessedLabel.text = "Input wasn't between 1 and 100"
+            numberGuessedLabel.text = "Input wasn't between \(minimumNumber) and \(maximumNumber)"
             return
         }
         if guess == randomNumber {
@@ -63,7 +62,7 @@ class ViewController: UIViewController {
         }
         
         if guessesRemaining == 0 {
-           setUpForRestart()
+            setUpForRestart()
             feedbackLabel.text = "You lose! The number was \(randomNumber)"
             return
         }
@@ -76,7 +75,7 @@ class ViewController: UIViewController {
         if guess != randomNumber {
             textField.text = ""
             guessesRemaining -= 1
-            remainingGuessLabel.text = "You have \(guessesRemaining) guesses remaining"
+            remainingGuessLabel.text = "You have \(guessesRemaining) extra guesses remaining"
             return
         }
     }
@@ -102,8 +101,6 @@ class ViewController: UIViewController {
     func restart () {
         // new random number
         randomNumber = Int.random(in: minimumNumber...maximumNumber)
-        // reset guesses remaining
-        guessesRemaining = 5
         // clear text field
         textField.text = ""
         //show text field
@@ -117,8 +114,7 @@ class ViewController: UIViewController {
         // reset feedback label
         feedbackLabel.text = "too high/low"
         // reset guesses remaining label
-        guessesRemaining = 5
-        remainingGuessLabel.text = "You have \(guessesRemaining) guesses remaining"
+        remainingGuessLabel.text = "You have \(guessesRemaining) extra guesses remaining"
         //Show intructions
         intructionsLabel.isHidden = false
         intructionsLabel.text = "Enter a number between \(minimumNumber) and \(maximumNumber)"

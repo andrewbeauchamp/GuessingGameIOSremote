@@ -17,7 +17,7 @@ class CostomViewController: UIViewController {
     @IBOutlet weak var startButton: UIButton!
     //Mark: Actions
     @IBAction func startButtonPressed(_ sender: Any) {
-         performSegue(withIdentifier: "CostomToGame", sender: sender)
+        performSegue(withIdentifier: "CostomToGame", sender: sender)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -29,7 +29,7 @@ class CostomViewController: UIViewController {
             guessingGameViewController.guessesRemaining = (Int(numberOfGuessesTextField.text!)!)
         default:
             break
-    }
+        }
         
     }
 }
